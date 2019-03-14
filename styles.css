@@ -1,0 +1,115 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header h1,
+header p {
+  -webkit-animation: slideInLeft 1.3s ease-in forwards;
+          animation: slideInLeft 1.3s ease-in forwards;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+header p {
+  -webkit-animation: slideInLeft 1s .5s ease-in forwards;
+          animation: slideInLeft 1s .5s ease-in forwards;
+}
+
+@media screen and (max-width: 414px) {
+  header p {
+    font-size: 1rem !important;
+  }
+}
+
+.skills {
+  margin-top: 2% !important;
+}
+
+.skills ul li {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 414px) {
+  .skills ul li {
+    font-size: 1rem !important;
+  }
+}
+
+.more-info ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 3%;
+}
+
+.more-info ul a:not(:nth-child(3)) {
+  margin-right: 3%;
+}
+
+main {
+  opacity: 0;
+  -webkit-animation: slideInUp 1s 1s ease-in forwards;
+          animation: slideInUp 1s 1s ease-in forwards;
+}
+
+@-webkit-keyframes slideInLeft {
+  from {
+    margin-right: -10000px;
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    margin-right: -10000px;
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideInUp {
+  from {
+    position: absolute;
+    margin-top: 10000px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    position: absolute;
+    margin-top: 10000px;
+  }
+  to {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
