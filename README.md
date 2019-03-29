@@ -1,2 +1,1 @@
-# CodingWithLaurence.github.io
-Resume Site
+## Simple Resume Site. <a href="itslaurence.com" target="_blank">Link</a>
